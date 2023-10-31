@@ -5,6 +5,16 @@ const UncontrolledInputs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget)
+    // console.log(formData)
+    // const email = formData.get("email");
+    // console.log([...formData.entries()]);
+
+    //Object.fromEntries turns an array of arrays' datastructure into an object with key value pairs
+    const newUser = Object.fromEntries(formData);
+    console.log(newUser)
+    setValue(value + 1);
+    e.currentTarget.reset(); //for clearing out the input fields
   };
   return (
     <div>
@@ -24,7 +34,7 @@ const UncontrolledInputs = () => {
           </label>
           <input type='email' className='form-input' id='email' name='email' />
         </div>
-        {/* email */}
+        {/* password */}
         <div className='form-row'>
           <label htmlFor='password' className='form-label'>
             Password
