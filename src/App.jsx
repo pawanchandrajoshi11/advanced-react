@@ -1,4 +1,4 @@
-import Starter from "./tutorial/06-forms/Revision/01-controlled-input";
+import Starter from "./tutorial/06-forms/Revision/02-user-challenge";
 
 function App() {
   return (
