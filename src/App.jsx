@@ -1,4 +1,4 @@
-import Starter from "./tutorial/05-leverage-javascript/revision/List";
+import Starter from "./tutorial/06-forms/Revision/01-controlled-input";
 
 function App() {
   return (
